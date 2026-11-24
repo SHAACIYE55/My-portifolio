@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <a href="#home" class="logo">Dev<span>Portfolio</span></a>
+        <nav id="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+            <button id="menu-btn" aria-label="Toggle Menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <p class="badge">Available for Work</p>
+            <h1>Hi, I'm <span>Mohamed Ali</span></h1>
+            <h2>profitional Web Developer</h2>
+            <p>I build fast, responsive web applications and scalable backend systems using HTML, CSS, JavaScript, Java,
+                and MySQL.</p>
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn outline">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="image.png" alt="Profile Picture" />
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-grid">
+            <div class="about-img">
+                <!-- Replace with your second photo -->
+                <img src="images.jpg" alt="About Me Picture" />
+            </div>
+            <div class="about-text">
+                <h3>Passionate Web & Java Developer</h3>
+                <p>I am a web developer dedicated to crafting clean, user-friendly interfaces paired with reliable
+                    database-driven backends. From responsive layouts to RESTful Java services and MySQL database
+                    architecture, I bring ideas to life on the web.</p>
+                <ul class="info-list">
+                    <li><strong>Role:</strong> Web Developer</li>
+                    <li><strong>Stack:</strong> HTML, CSS, JS, Java, MySQL, GitHub</li>
+                    <li><strong>Email:</strong> developer@example.com</li>
+                </ul>
+                <a href="#contact" class="btn primary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-alt">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="grid-3">
+            <div class="card skill-card">
+                <h3>HTML5</h3>
+                <p>Semantic markup, SEO-friendly structure, and accessible web forms.</p>
+                <div class="bar"><span style="width: 95%"></span></div>
+            </div>
+            <div class="card skill-card">
+                <h3>CSS3</h3>
+                <p>Flexbox, CSS Grid, responsive media queries, and modern animations.</p>
+                <div class="bar"><span style="width: 90%"></span></div>
+            </div>
+            <div class="card skill-card">
+                <h3>JavaScript</h3>
+                <p>ES6+, DOM manipulation, Fetch API, and interactive UI logic.</p>
+                <div class="bar"><span style="width: 85%"></span></div>
+            </div>
+            <div class="card skill-card">
+                <h3>Java</h3>
+                <p>Object-oriented programming, Spring Boot APIs, and backend logic.</p>
+                <div class="bar"><span style="width: 85%"></span></div>
+            </div>
+            <div class="card skill-card">
+                <h3>MySQL</h3>
+                <p>Relational schema design, complex SQL queries, and optimization.</p>
+                <div class="bar"><span style="width: 80%"></span></div>
+            </div>
+            <div class="card skill-card">
+                <h3>GitHub</h3>
+                <p>Version control, branching workflows, pull requests, and collaboration.</p>
+                <div class="bar"><span style="width: 88%"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2 class="section-title">My <span>Services</span></h2>
+        <div class="grid-3">
+            <div class="card">
+                <h3>Frontend Development</h3>
+                <p>Building responsive, mobile-first websites with clean HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="card">
+                <h3>Java Backend Systems</h3>
+                <p>Developing secure server-side applications and REST APIs powered by Java.</p>
+            </div>
+            <div class="card">
+                <h3>Database Management</h3>
+                <p>Designing, querying, and maintaining structured MySQL databases for web apps.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section bg-alt">
+        <h2 class="section-title">My <span>Portfolio</span></h2>
+
+        <div class="filter-btns">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="fullstack">Java & MySQL</button>
+        </div>
+
+        <div class="grid-3">
+            <div class="card project-card" data-category="fullstack">
+                <!-- Replace with project screenshot -->
+                <img src="https://placehold.co/400x240/2563eb/ffffff?text=Inventory+System" alt="Project 1" />
+                <div class="project-info">
+                    <h3>Inventory Manager</h3>
+                    <p>Full-stack stock tracker built with Java, MySQL, and JavaScript.</p>
+                    <a href="#" class="project-link">GitHub Repo →</a>
+                </div>
+            </div>
+
+            <div class="card project-card" data-category="frontend">
+                <img src="https://placehold.co/400x240/0f172a/ffffff?text=Agency+Landing+Page" alt="Project 2" />
+                <div class="project-info">
+                    <h3>Modern Agency Site</h3>
+                    <p>Responsive business website built with HTML5, CSS Grid, and JS.</p>
+                    <a href="#" class="project-link">GitHub Repo →</a>
+                </div>
+            </div>
+
+            <div class="card project-card" data-category="fullstack">
+                <img src="https://placehold.co/400x240/1d4ed8/ffffff?text=Student+Portal" alt="Project 3" />
+                <div class="project-info">
+                    <h3>Student Portal App</h3>
+                    <p>Web portal with Java authentication and MySQL student records.</p>
+                    <a href="#" class="project-link">GitHub Repo →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <form id="contact-form" class="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn primary">Send Message</button>
+            <p id="form-status"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Web Developer Portfolio. Built with HTML, CSS & JS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
